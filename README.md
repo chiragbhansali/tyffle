@@ -2,7 +2,7 @@
 
 Try Google Fonts. Blazing Fast.
 
-### Usage
+## Usage
 
 Head over to the [Tyffle](https://tyffle.ml) website.
 
@@ -13,6 +13,6 @@ Head over to the [Tyffle](https://tyffle.ml) website.
 5. Manage your bookmarks and get the link to import the font
 6. Loved Tyffle? Spread the love on [Twitter](https://twitter.com/intent/tweet?text=Try%20Google%20Fonts%20blazing%20fast%20with%20Tyffle%20http://tyffle.ml%20via%20@chiragdevmaster). 
 
-### Contributing
+## Contributing
 
 Found a bug? Report it [here](https://github.com/chiragbhansali/tyffle/issues/new)
