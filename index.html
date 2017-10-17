@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Try Google Fonts Blazing Fast">
+    <meta name="keywords" content="Try,Google Fonts,Blazing,Fats, Tyffle,Chirag,Bhansali">
+    <meta name="author" content="Chirag Bhansali">
+    <title>Tyffle - Try Google Fonts Blazing Fast</title>
+    <link rel="icon" href="images/favicon.jpg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108117823-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-108117823-1');
+    </script>
+
+    <script src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Hind|Heebo:400,700" rel="stylesheet" fontcdn>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="spinner-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+    <div class="settings open">
+        <div class="intro">
+            <h1>TYFFLE</h1>
+            <h2>Try Google Fonts Blazing Fast</h2>
+        </div>
+        <div class="font-options">
+            <div class="inputGroup">
+                <input type="checkbox" id="serif">
+                <label for="serif">Serif</label>
+            </div>
+            <div class="inputGroup">
+                <input type="checkbox" id="sans-serif">
+                <label for="sans-serif">Sans-serif</label>
+            </div>
+            <div class="inputGroup">
+                <input type="checkbox" id="monospace">
+                <label for="monospace">Monospace</label>
+            </div>
+            <div class="inputGroup">
+                <input type="checkbox" id="handwriting">
+                <label for="handwriting">Handwriting</label>
+            </div>
+            <div class="inputGroup">
+                <input type="checkbox" id="display">
+                <label for="display">Display</label>
+            </div>
+        </div>
+        <input type="checkbox" class="switch-input" id="head-para">
+        <label for="head-para" class="switch-label"> 
+            <span class="toggle--on">Paragraph</span>
+            <span class="toggle--off">Paragraph</span>
+        </label>
+        <div class="outro">
+            <span>Use spacebar to continue or to exit</span>
+        </div>
+    </div>
+    <nav class="overlay-nav">
+        <div class="cross">
+            ✖
+        </div>
+        <div class="links">
+            <!-- <a href="#">About the Project</a> -->
+            <a href="https://github.com/chiragbhansali/tyffle">View on Github</a>
+            <a href="https://www.producthunt.com/posts/tyffle">View on Product Hunt</a>
+            <a href="https://twitter.com/intent/tweet?text=Try Google Fonts blazinhttpsg fast with Tyffle http://tyffle.ml via @chiragdevmaster" target="_blank">Share on Twitter</a>
+            <a href="https://twitter.com/chiragdevmaster">Follow the Creator</a>
+            <a href="https://github.com/chiragbhansali/tyffle/issues/new">Report a Bug</a>
+        </div>
+        <!--
+        <div class="social-links">
+            <a href="https://twitter.com/intent/tweet?text=Try Google Fonts blazing fast with Tyffle http://tyffle.ml via @chiragdevmaster" target="_blank">Share on Twitter</a>
+            <a href="#">Like on Product Hunt</a>
+            <a href="#">Report a Bug</a>
+        </div>
+    -->
+    </nav>
+    <div class="wrapper">
+        <header>
+            <div class="col col-1">
+                <nav class="hamburger">
+                    <div class="burger one"></div>
+                    <div class="burger two"></div>
+                    <div class="burger three"></div>
+                </nav>
+            </div>
+            <div class="col col-10">
+                <h1 class="title">Tyffle</h1>
+            </div>
+            <div class="col col-1">
+                <i class="material-icons bookmark-collection" data-balloon="Bookmarks" data-balloon-pos="left">collections_bookmark</i>
+                <span data-bookmarks="0"></span>
+            </div>
+        </header>
+        <section class="playground">
+            <input type="text" class="input" value="The quick brown fox jumps over the lazy dog" data-focus="false">
+            <textarea class="input para" data-focus="false">
+                The quick brown fox jumps over the lazy dog. Pack my box with five dozen liquor jugs.
+                The jay, pig, fox, zebra and my wolves quack!
+            </textarea>
+            <!-- <i class="material-icons embed-icon">code</i> -->
+            <a href="https://twitter.com/intent/tweet?text=Try Google Fonts blazing fast with Tyffle http://tyffle.ml via @chiragdevmaster" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="#1da1f2" fill="#1da1f2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="twitter-icon"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+        </section>
+        <div class="control-panel">
+            <div class="col col-1">
+                <i class="material-icons settings-icon" data-balloon="Settings" data-balloon-pos="up">settings</i>
+            </div>
+            <div class="col col-8">
+                <div class="font-name-container">
+                    <span class="fontname" data-balloon="Click to bookmark" data-balloon-pos="up">Hind</span>
+                    <!-- <i class="material-icons bookmark-icon">bookmark_border</i> -->
+                </div>
+            </div>
+            <div class="col col-1">
+                <span><i class="material-icons arrow arrow-left" data-balloon="Previous Font" data-balloon-pos="up">arrow_backward</i></span>
+                <span><i class="material-icons arrow arrow-right" data-balloon="Next Font" data-balloon-pos="up">arrow_forward</i></span>
+            </div>
+        </div>
+    </div>
+    <div class="bookmark-window">
+        <div class="cross">✖</div>
+        <div class="content-wrapper">
+            <h1 class="heading">Bookmarks</h1>
+            <p class="description">Click to view the font. Double click to remove it.</p>
+            <!-- <code class="code-block" data-clipboard-target=".code-block">
+                https://fonts.googleapis.com/css?family=Hind|Heebo:400,700
+            </code> -->
+            <div class="bookmark-badges">
+            </div>
+            <code class="code-block" data-clipboard-target=".code-block">
+                https://fonts.googleapis.com/css?family=Hind|Heebo:400,700
+            </code>
+            <span style="display: block;"></span>
+        </div>
+    </div>
+</body>
+
+</html>
