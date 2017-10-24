@@ -176,7 +176,9 @@ $(document).ready(function() {
         for (var i = 0; i < fontsSaved.length; i++) {
             $('<span class="bookmark-badge">' + fontsSaved[i] + '</span>').appendTo('.bookmark-badges');
         }
-        console.log('hello');
+        $('.bookmark-badge').on('click', function (e) {
+            $('.bookmark-window .heading').css('font-family', $(this).text());
+        });
     }
 
     // Main Body
@@ -211,6 +213,7 @@ $(document).ready(function() {
             $('.input.para').hide();
         }
     });
+
 
     /**
      * Set the max height of the body to 100% if settings has the open class
@@ -277,9 +280,10 @@ $(document).ready(function() {
 
     $(this).on('keyup', function(e) {
         if ((e.keyCode === 39 || e.keyCode === 32 || e.keyCode === 13) && !(settingsWindow.hasClass('open')) && !(textBox.hasClass('focused'))) {
+            e.preventDefault();
             generateFont();
         }
-    })
+    });
 
     /**
      * Show the previous font when the left arrow is clicked
@@ -300,11 +304,9 @@ $(document).ready(function() {
             fontsSaved.push($(this).text());
             bookmarks.attr('data-bookmarks', fontsSaved.length);
         } else {
-            // if (fontsSaved.indexOf(currentFont) !== 1) {
             var i = fontsSaved.indexOf($(this).text());
             fontsSaved.splice(i, 1);
             bookmarks.attr('data-bookmarks', fontsSaved.length);
-            // }
         }
         bookmarks.attr('data-bookmarks', fontsSaved.length);
         bookmarks.text(bookmarks.attr('data-bookmarks'));
@@ -319,12 +321,6 @@ $(document).ready(function() {
     codeBlock.on('click', function() {
         $(this).next('span').text('Link Copied successfully').delay(2000).fadeOut();
     });
-
-    /*
-     *** Hiding the left arrow if the fontsViewed variable is empty ***
-     */
-
-    // leftArrow.css('opacity', '0.4');
 
     /**
      * Navigation Bar, Bookmark Window Toggle
@@ -375,6 +371,7 @@ $(document).ready(function() {
             $('.description').text('Click to view the font. Double click to remove it.');
         } else {
             codeBlock.fadeOut('fast');
+            $('.bookmark-window .heading').css('font-family', 'Hind');
             $('.description').text('No fonts bookmarked. Bookmark fonts by clicking on the font name');
         }
         updateSavedFontList();
